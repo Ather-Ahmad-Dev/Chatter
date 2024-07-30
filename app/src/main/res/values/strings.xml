@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Chatter</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_phNumber">Enter your phone number to sign up</string>
+    <string name="phNumber">Phone Number</string>
+    <string name="phNumber_editText"> +92 </string>
+    <string name="continueBtn">Continue</string>
+    <string name="or"> ------------ or ------------- </string>
+    <string name="ctnWFB">Continue with Facebook</string>
+    <string name="ctnWG">Continue with Google</string>
+
+
 </resources>
