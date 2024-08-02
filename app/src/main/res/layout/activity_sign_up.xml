@@ -13,6 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
         app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,6 +25,7 @@
         android:id="@+id/enterPhNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:text="@string/enter_phNumber"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/signUp" />
@@ -30,17 +35,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/phNumber"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/enterPhNumber" />
 
-    <EditText
-        android:id="@+id/phNumber_editText"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="@string/phNumber_editText"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/empty_border"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-        app:layout_constraintTop_toBottomOf="@+id/phNumberHeading" />
+        app:layout_constraintTop_toBottomOf="@+id/phNumberHeading">
+
+        <com.hbb20.CountryCodePicker
+            app:ccp_showNameCode="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:hint="@string/ask_number"
+                android:inputType="phone"
+                android:autofillHints="phone"
+                android:maxLength="10"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/continueBtn"
@@ -49,9 +83,10 @@
         android:text="@string/continueBtn"
         android:textAllCaps="false"
         android:textColor="#ffff"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-        app:layout_constraintTop_toBottomOf="@+id/phNumber_editText"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         android:background="@drawable/custom_btn_blue"/>
 
     <TextView
@@ -59,6 +94,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/or"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@id/continueBtn" />
@@ -73,6 +109,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:padding="5dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/custom_btn_empty">
 
         <ImageView
@@ -101,6 +138,7 @@
         app:layout_constraintTop_toBottomOf="@id/ctnWFB"
         android:orientation="horizontal"
         android:padding="5dp"
+        android:layout_marginTop="10dp"
         android:gravity="center">
 
         <ImageView
@@ -119,15 +157,29 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/backToSignIn"
+    <LinearLayout
+        android:id="@+id/text_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/backToSignIn"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/ctnWG" />
+        app:layout_constraintTop_toBottomOf="@+id/ctnWG"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backToSignIn"/>
+        <TextView
+            android:id="@+id/sign_in_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/signin"
+            android:textColor="#98A5ED"/>
+
+    </LinearLayout>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineLeft"

@@ -8,7 +8,9 @@
     <string name="or"> ------------ or ------------- </string>
     <string name="ctnWFB">Continue with Facebook</string>
     <string name="ctnWG">Continue with Google</string>
-    <string name="backToSignIn">Already have an Account? SignIn</string>
+    <string name="backToSignIn">Already have an Account?</string>
+    <string name="signin">SignIn</string>
+    <string name="ask_number">Enter your number</string>
 
 
 </resources>
