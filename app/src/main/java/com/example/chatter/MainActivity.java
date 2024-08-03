@@ -3,8 +3,6 @@ package com.example.chatter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -31,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: Change the color of Edit Text's Layout. Cant do via xml.
         // TODO: If number input contain any characters, update helper text.
-        // Hint: Use onFocousedChangeListener
+        // TODO: Put a helper text below edit text. Login, Logo is already added with name "Visibility"
+        // Hint: Use onFocusedChangeListener
     }
 
     @Override
@@ -42,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 intent = new Intent(MainActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(MainActivity.this, LogInActivity.class);
                 startActivity(intent);
             }
         });
