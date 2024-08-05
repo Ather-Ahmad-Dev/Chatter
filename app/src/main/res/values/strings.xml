@@ -2,9 +2,8 @@
     <string name="app_name">Chatter</string>
     <string name="sign_up">Sign Up</string>
     <string name="log_in">Log in</string>
-    <string name="enter_phNumber">Enter your phone number to sign up</string>
+    <string name="enter_phNumber">Enter phone number</string>
     <string name="enter_phNumber_login">Enter your phone number</string>
-    <string name="phNumber">Phone Number</string>
     <string name="phNumber_editText"> +92 </string>
     <string name="continueBtn">Continue</string>
     <string name="or"> ------------ or ------------- </string>
