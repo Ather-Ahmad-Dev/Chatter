@@ -66,6 +66,7 @@
             android:layout_weight="1"
             android:hint="@string/enter_phNumber"
             android:autofillHints="phone"
+            android:maxLength="10"
             android:inputType="phone"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"

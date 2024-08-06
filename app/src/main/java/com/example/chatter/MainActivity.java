@@ -28,9 +28,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // TODO: Change the color of Edit Text's Layout. Cant do via xml.
+        //       Hint: Use onFocusedChangeListener
         // TODO: If number input contain any characters, update helper text.
         // TODO: Put a helper text below edit text. Login, Logo is already added with name "Visibility"
-        // Hint: Use onFocusedChangeListener
+        //       change text type from password to text on logo clicked.
+        // TODO: Set Conditions for login's edit text and password
+        //       e.g if password limit is reached show some text, same with numbers
+        // TODO: Check pass and phone via firebase
+        // TODO: Make Screen go up while typing in fields like password.
+
     }
 
     @Override
