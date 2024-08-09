@@ -39,7 +39,7 @@
         android:text="@string/enter_phNumber"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@id/image"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"/>
 
@@ -131,7 +131,7 @@
         app:layout_constraintTop_toBottomOf="@+id/forgot_password"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"/>
-    
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
         app:layout_constraintTop_toBottomOf="@id/login_button"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight">
-        
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
             android:textColor="#98A5ED"
             android:paddingStart="5dp"/>
     </LinearLayout>
-    
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineLeft"
         android:layout_width="wrap_content"

@@ -16,6 +16,7 @@
     <string name="password">Password</string>
     <string name="enter_password">Enter your password</string>
     <string name="forgot_password">Forgot password?</string>
+    <string name="only_Number">Should only contains numbers</string>
 
 
 </resources>
